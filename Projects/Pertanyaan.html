@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <h1>PERTANYAAN BUAT WINDA</h1>
+        <img src="https://media.giphy.com/media/D5702cWjKlQ7C/giphy.gif?cid=ecf05e47usvw23gnxnz61kgeodvco7ocoaxzgai5npf7kdht&rid=giphy.gif&ct=g">
+        <h1>AKU MIRIP SOONG JONG KI GAK?</h1>
+        <button id='btn_BANGET' onclick='alert("MAKASIH WINDA JELEK")'>BANGET</button>&nbsp;
+        <button id='btn_ENGGAK' onclick= 'ENGGAK(this)' style='position:absolute'>ENGGAK</button>
+    </body>
+    <script>
+        function ENGGAK(id){
+            var BANGET = document.getElementById('btn_BANGET');
+            var i = Math.floor(Math.random()*300)+1;
+            var j = Math.floor(Math.random()*100)+BANGET.offsetTop;
+            id.style.left = i+'px';
+            id.style.top = j+'px';
+        }
+    </script>
+</html>
